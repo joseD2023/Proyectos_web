@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de datos</title>
+</head>
+<body>
+    <h2><strong>Estructura de Datos</strong></h2>
+    <h3 style="color: brown;">Listas  dentro de Html</h3>
+    <ol>
+        <li>{{movies[0]}}</li> <!--usamos el parametro que nos pasa flask para el funcionamiento-->
+        <li>{{movies[1]}}</li>
+        <li>{{movies[2]}}</li>
+    </ol>
+
+    <h3 style="color: brown;">Diccionarios dentro de Html</h3>
+    <h4>Pelicula Destacada</h4>
+    <p>
+        La pelicula destacada del dia de Hoy es: {{destacada.Nombre}} la cual fue estrenada en el año: {{destacada.año}} y cuyo protagonista es: {{destacada.protagonista}} <!--para acceder al valor de un diccionario dentro de flask usamos diccionario.clave o tambien diccionari["clave"] cualquiera de las dos formas es eficiente-->
+    </p>
+
+    <h3 style="color: brown;"><strong>Clases dentro de Html</strong></h3>
+    <h4>pelicula Infantil</h4>
+    <p>
+        La pelicula Infatil almacenada en python utilizando Clases es: {{nueva.nombre}} y el año que se estreño es: {{nueva.año}} y sus personajes principales fueron {{nueva.protagonista}}
+    </p>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-loop</title>
+</head>
+<body>
+
+    <h1>Vamos a usar For dentro de nuestra plantilla tema: <strong>Equipo con mas Titulos Europeos</strong></h1>
+
+    <h2>Equipos: </h2>
+
+    <ul>
+        {% for e in teams %}
+        <li>Equipo: {{e}}</li>
+        {% endfor %}
+    </ul>
+
+
+    <h2>Ganadores de la Champions Leaguea</h2>
+
+    <ul>
+        {% for team, copas in ganadores.items() %}
+        
+        <li>Ganador: {{ team }} con {{ copas }} <strong>Champions</strong></li>
+
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

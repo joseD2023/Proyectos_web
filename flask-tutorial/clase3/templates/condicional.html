@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <h1>Plantilla con Condicionales en Flask</h1>
+    <!--Vamos a usar un condicional para conocer que equipo debe  mostrar y que equipo no -->
+
+    {% if equipo == "real" %}
+
+    <h3>Jugadores del Real Madrid</h3>
+
+    <ol>
+        <li>courtous</li>
+        <li>Modric</li>
+        <li>Mbappe</li>
+        <li>Valverde</li>
+        <li>Rodrigo</li>
+    </ol>
+
+    {% endif %}
+
+    {%if equipo == "barcelona" %}
+
+    <h3>Jugadores del Barcelona</h3>
+    <ol>
+        <li>Testegen</li>
+        <li>Pedri</li>
+        <li>De Jong</li>
+        <li>Raphina</li>
+        <li>Lewandoski</li>
+    </ol>
+    {% else %}
+    <h3 style="color: red; align-content: center;">El equipo {{equipo}} No se encontro dentro de nuestro Sistema</h3>
+
+    {% endif %}
+
+    
+    
+</body>
+</html>

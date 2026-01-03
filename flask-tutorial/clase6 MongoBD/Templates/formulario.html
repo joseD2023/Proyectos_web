@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Ejemplo de entrada de datos con Flask</h1>
+    <h4>Vamos a trabajar con una Base de Datos Mongo</h4>
+    <form class="form", method="post">
+        <label for="entry" class="form_label">Usuarios</label>
+        <input type="text" name="contenido" id="entry"> <!--type= text porque lo que va a conteneder es texto-->
+        <button type="submit" class="form_submit">Enviar</button> <!--type=submit va es decir que nos va a renviar algo-->
+
+    <ul> <!--aqui vamos a mostrar los datos que tenemos guardados en memoria arrays y mostrarlos cada vez que ingresen uno nuevo-->
+        {% for ver in usuarios %}
+
+          {%if ver != "" %}
+
+           <li>Dato: {{ver}}</li>
+
+          {% else %}
+
+            <p>No Ingreso un Dato lo dejo como Vacio</p>
+            
+        {% endif  %}
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
