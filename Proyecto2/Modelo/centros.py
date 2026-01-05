@@ -8,6 +8,26 @@ class Centros:
         self.__capacidad = capacidad
         self.__paquetes = 0
 
+    def __repr__(self):
+        
+        return f"""
+    ID Centro: {self.__id}
+    Nombre Centro: {self.__nombre}
+    Ubicacion Centro: {self.__ubicacion}
+    Capacidad Centro: {self.__capacidad}
+    Paquetes Centro: {self.__paquetes}
+"""
+
+    def __str__(self):
+
+        return f"""
+    ID Centro: {self.__id}
+    Nombre Centro: {self.__nombre}
+    Ubicacion Centro: {self.__ubicacion}
+    Capacidad Centro: {self.__capacidad}
+    Paquetes Centro: {self.__paquetes}
+"""
+
     #ahora vamos hacer getters  y setters 
     @property
     def id(self):
@@ -54,6 +74,9 @@ class Centros:
     def quitar_paquetes(self):
         if self.__paquetes > 0:
             self.__paquetes -= 1 
+
+    def mostrar_informacion(self): 
+        return None
 
 
 

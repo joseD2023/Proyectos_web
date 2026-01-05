@@ -7,6 +7,27 @@ class Mensajeros:
         self.__centro_asignado = centro_asignado
         self.__estado = "PENDIENTE"
         self.__cantidad_paquetes = 0
+
+    def __repr__(self):
+            return f"""
+ID Mensajero: {self.__id}
+Nombre Mensajero: {self.__nombre}
+Capacidad Max: {self.__capacidad}
+Centro Asigando: {self.__centro_asignado}
+Estado Mensajero: {self.__estado}
+Cantidad Paquetes: {self.__cantidad_paquetes}
+"""
+        
+
+    def __str__(self):
+        return f"""
+ID Mensajero: {self.__id}
+Nombre Mensajero: {self.__nombre}
+Capacidad Max: {self.__capacidad}
+Centro Asigando: {self.__centro_asignado}
+Estado Mensajero: {self.__estado}
+Cantidad Paquetes: {self.__cantidad_paquetes}
+"""
     
     @property
     def id(self):
